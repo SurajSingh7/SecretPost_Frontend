@@ -25,7 +25,7 @@ export const AllSecretPost = () => {
           const toastId = toast.loading("Loading...");
           try {
             const res = await apiConnector("GET", postEndpoints.GET_ALL_SECRET_POST_API);
-            setGetAllPost(res?.data?.data)
+            setGetAllPost(res?.data?.data.reverse())
           } catch (error) {
             console.log("Could not fetch post", error)
           }

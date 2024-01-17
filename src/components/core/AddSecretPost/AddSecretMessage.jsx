@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import {useNavigate } from 'react-router-dom'
 import { createPostAPI } from '../../../services/operations/secretPostAPI';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { setPage } from '../../../slices/PaginationSlice';
 
 export const AddSecretMessage = () => {
 
@@ -40,10 +41,8 @@ export const AddSecretMessage = () => {
       content: "",
       email: user,
     })
-
+   
   }
-
-
 
   return (
     <div className='w-[80%] md:w-[60%] bg-richblack-900 m-auto mt-5 p-4 shadow-[10px_-5px_35px_-5px] shadow-blue-200 rounded-md'>
