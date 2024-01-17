@@ -10,7 +10,7 @@ const PrivateRoute = ({children}) => {
     if(token !== null)
         return children
     else{
-        toast.success("Please first login")
+        toast.success(<h1 className='font-extrabold'>Please First Login</h1>);
         return  <Navigate to="/login" />
     }
         
