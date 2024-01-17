@@ -3,8 +3,8 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
 import { BiArrowBack } from "react-icons/bi"
 import { useDispatch, useSelector } from "react-redux"
 import { Link, useLocation, useNavigate } from "react-router-dom"
-
 import { resetPassword } from "../services/operations/authAPI"
+
 
 function UpdatePassword() {
   const navigate = useNavigate()
@@ -98,7 +98,7 @@ function UpdatePassword() {
 
             <button
               type="submit"
-              className="mt-6 w-full rounded-[8px] bg-yellow-50 py-[12px] px-[12px] font-medium text-richblack-900"
+              className="mt-6 w-full rounded-[8px] bg-[#21ba45] py-[12px] px-[12px] font-medium text-richblack-900"
             >
               Reset Password
             </button>

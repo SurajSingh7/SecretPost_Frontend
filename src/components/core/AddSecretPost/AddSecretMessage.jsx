@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import {useNavigate } from 'react-router-dom'
 import { createPostAPI } from '../../../services/operations/secretPostAPI';
-import { useDispatch, useSelector } from 'react-redux';
-import { setPage } from '../../../slices/PaginationSlice';
+import { useSelector } from 'react-redux';
+
 
 export const AddSecretMessage = () => {
 

@@ -147,6 +147,11 @@ export function resetPassword(password, confirmPassword, token, navigate) {
   return async (dispatch) => {
     const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
+
+    console.log("suraj999",password, confirmPassword, token);
+
+
+
     try {
       const response = await apiConnector("POST", RESETPASSWORD_API, {
         password,
